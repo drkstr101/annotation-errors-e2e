@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StackbitObjectId, getObjectId, toFieldPath } from '@stackbit/annotations';
-import type * as types from 'types';
+import types from 'types';
 
 import MuiBox from '@mui/material/Box';
 import MuiTypography from '@mui/material/Typography';
