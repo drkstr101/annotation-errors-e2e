@@ -12,3 +12,4 @@ This is meant to be a simple test of annotations validation and reporting system
 
 1. Header
     - Missing title annotation
+    - `HeaderModel
