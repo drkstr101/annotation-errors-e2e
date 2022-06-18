@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StackbitObjectId, getObjectId, toFieldPath } from '@stackbit/annotations';
-import { Header as HeaderModel} from 'types';
+import { Header as HeaderModel } from 'types';
 
 import MuiAppBar from '@mui/material/AppBar';
 import MuiBox from '@mui/material/Box';
@@ -20,13 +20,13 @@ export const Header: React.FC<Props> = (props) => {
             <MuiToolbar disableGutters={true} sx={{ flexWrap: 'wrap' }}>
                 {title && (
                     <MuiBox sx={{ mb: 1, mr: 2, flexGrow: 1 }}>
-                        <MuiTypography component="p" variant="h6" color="text.primary" noWrap {...toFieldPath('.title')}>
+                        <MuiTypography component="p" variant="h6" color="text.primary" noWrap>
                             {title}
                         </MuiTypography>
                     </MuiBox>
                 )}
                 {navLinks.length > 0 && (
-                    <MuiBox component="nav" sx={{ display: 'flex', flexWrap: 'wrap' }} {...toFieldPath('.navLinks')}>
+                    <MuiBox component="nav" sx={{ display: 'flex', flexWrap: 'wrap' }} {...toFieldPath('navLinks')}>
                         {navLinks.map((link, index) => (
                             <Link
                                 key={index}

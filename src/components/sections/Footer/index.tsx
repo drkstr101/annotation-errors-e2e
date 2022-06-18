@@ -13,7 +13,7 @@ type Props = FooterModel & StackbitObjectId;
 export const Footer: React.FC<Props> = (props) => {
     const { navLinks = [], copyrightText } = props;
     const objectId = getObjectId(props);
-    const fieldPath = objectId ? `${objectId}:footer` : null;
+    const fieldPath = objectId ? `${objectId}` : null;
     return (
         <MuiBox component="footer" sx={{ alignItems: 'center', display: 'flex', flexWrap: 'wrap', py: 3 }} {...toFieldPath(fieldPath)}>
             {navLinks.length > 0 && (
