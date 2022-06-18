@@ -9,7 +9,7 @@ import MuiTypography from '@mui/material/Typography';
 
 import { Link } from '../../atoms/Link';
 
-export type Props = types.Header & StackbitObjectId;
+export type Props = HeaderModel & StackbitObjectId;
 
 export const Header: React.FC<Props> = (props) => {
     const { title, navLinks = [] } = props;
