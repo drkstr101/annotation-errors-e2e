@@ -1,6 +1,6 @@
 {
-    "name": "mui-nextjs-starter",
-    "version": "0.1.0",
+    "name": "annotation-errors-e2e",
+    "version": "0.2.0",
     "engines": {
         "node": ">=14",
         "npm": ">=6"
@@ -8,6 +8,7 @@
     "sideEffects": false,
     "scripts": {
         "dev": "next dev",
+        "stackbit:dev": "stackbit dev --log-level debug --open",
         "build": "next build && next export",
         "start": "next start",
         "export": "next export",
