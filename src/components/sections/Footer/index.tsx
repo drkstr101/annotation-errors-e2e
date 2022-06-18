@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StackbitObjectId, getObjectId, toFieldPath } from '@stackbit/annotations';
-import {Footer} from 'types';
+import {Footer as Footer} from 'types';
 
 import MuiBox from '@mui/material/Box';
 import MuiTypography from '@mui/material/Typography';
