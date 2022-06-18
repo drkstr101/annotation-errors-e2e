@@ -2,13 +2,27 @@
 
 A simple starting point for a Stackbit project that includes support for [MUI](https://mui.com/).
 
-## Features
+## Getting started
 
-This is meant to be a simple test of annotations validation and reporting system.
+0. Ensure `node --version` is 14.x and `npm --version` is 6.x
+
+1. checkout the project and install node_modules:
+
+    ```sh
+    git checkout https://github.com/drkstr101/annotation-errors-e2e.git
+    cd annotation-errors-e2e
+    npm i
+    ```
+2. Open up two command line prompts in this directory.
+    a. In the first one run `npm run dev`
+    b. In the second terminal run `stackbit:dev`
+
+This will open Stackbit in your browser in local dev mode. Refer to the second
+command line for reported annotation errors. If this command is run in vscode
+or WebStorm then the sourcemap links will be navigable.
 
 
-
-## List of erata
+## List of errata
 
 1. Header
     - Missing title annotation
