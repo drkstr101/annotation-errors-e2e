@@ -8,7 +8,7 @@ import MuiTypography from '@mui/material/Typography';
 import { Link } from '../../atoms/Link';
 import { Markdown } from '../../atoms/Markdown';
 
-type Props = types.Footer & StackbitObjectId;
+type Props = Footer & StackbitObjectId;
 
 export const Footer: React.FC<Props> = (props) => {
     const { navLinks = [], copyrightText } = props;
