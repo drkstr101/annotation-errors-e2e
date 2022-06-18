@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StackbitObjectId, getObjectId, toFieldPath } from '@stackbit/annotations';
-import { Header as HeaderModelb} from 'types';
+import { Header as HeaderModel } from 'types';
 
 import MuiAppBar from '@mui/material/AppBar';
 import MuiBox from '@mui/material/Box';
