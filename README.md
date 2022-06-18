@@ -4,7 +4,7 @@ A simple starting point for a Stackbit project that includes support for [MUI](h
 
 ## Features
 
-This is meant to be a simple starting point that demonstrates the use of bringing your own component library, such as MUI.
+This is meant to be a simple test of th
 
 
 
