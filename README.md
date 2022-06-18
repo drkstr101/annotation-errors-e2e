@@ -4,7 +4,7 @@ A simple starting point for a Stackbit project that includes support for [MUI](h
 
 ## Features
 
-This is meant to be a simple test of th
+This is meant to be a simple test of 
 
 
 
