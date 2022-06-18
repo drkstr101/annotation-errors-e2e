@@ -32,7 +32,7 @@
         "sourcebit-target-next": "^0.8.3"
     },
     "devDependencies": {
-        "@stackbit/cli": "^0.2.27",
+        "@stackbit/cli": "0.2.27",
         "@types/react": "^17.0.37",
         "autoprefixer": "^10.2.6",
         "eslint": "^7.29.0",
