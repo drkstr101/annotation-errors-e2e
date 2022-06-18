@@ -26,7 +26,7 @@ export const Header: React.FC<Props> = (props) => {
                     </MuiBox>
                 )}
                 {navLinks.length > 0 && (
-                    <MuiBox component="nav" sx={{ display: 'flex', flexWrap: 'wrap' }} {...toFieldPath('.navLinks')}>
+                    <MuiBox component="nav" sx={{ display: 'flex', flexWrap: 'wrap' }} {...toFieldPath('navLinks')}>
                         {navLinks.map((link, index) => (
                             <Link
                                 key={index}
