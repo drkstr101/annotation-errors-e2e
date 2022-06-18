@@ -11,3 +11,4 @@ This is meant to be a simple test of annotations validation and reporting system
 ## List of erata
 
 1. Header
+    - Missing title annotation
