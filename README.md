@@ -9,7 +9,7 @@ A simple starting point for a Stackbit project that includes support for [MUI](h
 1. checkout the project and install node_modules:
 
    ```sh
-   git checkout --recurse-submodules https://github.com/drkstr101/annotation-errors-e2e.git
+   git checkout --recurse-submodules https://github.com/stackbit/annotation-errors-e2e.git
    cd annotation-errors-e2e
    yarn
    ```
