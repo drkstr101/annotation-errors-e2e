@@ -17,12 +17,12 @@
         "prettier": "prettier --write src",
         "prepare": "yarn build:utils && yarn build:annotations && yarn build:sdk && yarn build:cms-core && yarn build:cms-contentful && yarn build:cms-git && yarn build:cms-sanity && yarn build:dev-common && yarn build:dev && yarn build:cli",
         "build:utils": "yarn workspace @stackbit/utils build",
-        "build:annotations": "yarn workspace @stackbit/annotations build",
+        "build:annotations": "exit 0 && yarn workspace @stackbit/annotations build",
         "build:sdk": "yarn workspace @stackbit/sdk build",
-        "build:cms-core": "yarn workspace @stackbit/cms-core build",
-        "build:cms-contentful": "yarn workspace @stackbit/cms-contentful build",
-        "build:cms-git": "yarn workspace @stackbit/cms-git build",
-        "build:cms-sanity": "yarn workspace @stackbit/cms-sanity build",
+        "build:cms-core": "exit 0 && yarn workspace @stackbit/cms-core build",
+        "build:cms-contentful": "exit 0 && yarn workspace @stackbit/cms-contentful build",
+        "build:cms-git": "exit 0 && yarn workspace @stackbit/cms-git build",
+        "build:cms-sanity": "exit 0 && yarn workspace @stackbit/cms-sanity build",
         "build:dev-common": "yarn workspace @stackbit/dev-common build",
         "build:dev": "yarn workspace @stackbit/dev build",
         "build:cli": "yarn workspace @stackbit/cli build"
@@ -57,6 +57,6 @@
     "main": "next.config.js",
     "license": "MIT",
     "workspaces": [
-        "stackbit/packages/*"
+        "stackbit/packages/!(annotations)"
     ]
 }
