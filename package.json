@@ -1,6 +1,7 @@
 {
     "name": "annotation-errors-e2e",
-    "version": "0.2.0",
+    "private": true,
+    "version": "0.3.0",
     "engines": {
         "node": ">=14",
         "npm": ">=6"
@@ -8,12 +9,23 @@
     "sideEffects": false,
     "scripts": {
         "dev": "next dev",
-        "stackbit:dev": "stackbit dev --log-level debug --open",
+        "stackbit-dev": "node ./bin/dev.js",
         "build": "next build && next export",
         "start": "next start",
         "export": "next export",
         "validate": "stackbit validate",
-        "prettier": "prettier --write src"
+        "prettier": "prettier --write src",
+        "prepare": "yarn build:utils && yarn build:annotations && yarn build:sdk && yarn build:cms-core && yarn build:cms-contentful && yarn build:cms-git && yarn build:cms-sanity && yarn build:dev-common && yarn build:dev && yarn build:cli",
+        "build:utils": "yarn workspace @stackbit/utils build",
+        "build:annotations": "yarn workspace @stackbit/annotations build",
+        "build:sdk": "yarn workspace @stackbit/sdk build",
+        "build:cms-core": "yarn workspace @stackbit/cms-core build",
+        "build:cms-contentful": "yarn workspace @stackbit/cms-contentful build",
+        "build:cms-git": "yarn workspace @stackbit/cms-git build",
+        "build:cms-sanity": "yarn workspace @stackbit/cms-sanity build",
+        "build:dev-common": "yarn workspace @stackbit/dev-common build",
+        "build:dev": "yarn workspace @stackbit/dev build",
+        "build:cli": "yarn workspace @stackbit/cli build"
     },
     "dependencies": {
         "@emotion/cache": "^11.7.1",
@@ -43,5 +55,8 @@
     },
     "description": "A Nextjs page builder, component library and data source mapper all in one.",
     "main": "next.config.js",
-    "license": "MIT"
+    "license": "MIT",
+    "workspaces": [
+        "stackbit/packages/*"
+    ]
 }
