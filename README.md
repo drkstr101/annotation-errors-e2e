@@ -1,6 +1,8 @@
-# Stackbit MUI Next.js Starter
+# Stackbit Annotation Error Test Site
 
-A simple starting point for a Stackbit project that includes support for [MUI](https://mui.com/).
+This project can be used to test pre-releases of the cli app. It is configured to load the
+monorepo as a git submodule, then uses a yarn workspace to link the local package for dev.
+Finally, a `bin/dev.js` wrapper is invoked to launch stackbit in dev mode using this package.
 
 ## Getting started
 
@@ -9,12 +11,13 @@ A simple starting point for a Stackbit project that includes support for [MUI](h
 1. checkout the project and install node_modules:
 
    ```sh
-   git checkout --recurse-submodules https://github.com/stackbit/annotation-errors-e2e.git
+   git clone --recursive git@github.com:stackbit/annotation-errors-e2e.git
    cd annotation-errors-e2e
    yarn
    ```
 
-   (if yarn cannot be found, first run `npm i -g yarn`)
+If yarn cannot be found, first run `npm i -g yarn`. note: your git needs to be configured with ssh so that
+user auth will pass through to the submodule.
 
 2. Open up two command-line prompts in this directory.
    a. In the first one run `yarn dev`
@@ -29,7 +32,6 @@ command line for reported annotation errors. If this command is run in vscode or
 
 1. Header
    - Missing title annotation
-   - `navLinks` should be `.navLinks`
 2. Footer
    - Incorrect parent field path (missing `:footer` at the end)
 
